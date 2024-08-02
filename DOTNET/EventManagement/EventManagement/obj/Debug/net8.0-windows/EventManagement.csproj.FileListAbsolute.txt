@@ -1,0 +1,17 @@
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.exe
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.deps.json
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.runtimeconfig.json
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\bin\Debug\net8.0-windows\EventManagement.pdb
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.Form1.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.csproj.GenerateResource.cache
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.AssemblyInfoInputs.cache
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.AssemblyInfo.cs
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.csproj.CoreCompileInputs.cache
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.sourcelink.json
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\refint\EventManagement.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.pdb
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.genruntimeconfig.cache
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\ref\EventManagement.dll
