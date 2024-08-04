@@ -1,9 +1,13 @@
+using System.Data.SqlClient;
+
 namespace EventManagement
 {
     
     public partial class Form1 : Form
     {
         
+        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True");
+        SqlCommand cmd;
         string gender;
         public Form1()
         {
@@ -47,7 +51,11 @@ namespace EventManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            conn.Open();// Open the database connection
+            cmd = new SqlCommand("insert into usertable values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + gender + "','" + textBox4.Text + "','" + textBox5.Text + "','user')", conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("inserted successfully");
         }
     }
 }

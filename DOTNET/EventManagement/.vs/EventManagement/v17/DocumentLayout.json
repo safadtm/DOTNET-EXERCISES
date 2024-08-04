@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|c:\\users\\safad\\dotnet-exercises\\dotnet\\eventmanagement\\eventmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\eventmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|c:\\users\\safad\\dotnet-exercises\\dotnet\\eventmanagement\\eventmanagement\\eventmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\eventmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventManagement",
+              "DocumentMoniker": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\EventManagement.csproj",
+              "RelativeDocumentMoniker": "EventManagement\\EventManagement.csproj",
+              "ToolTip": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\EventManagement.csproj",
+              "RelativeToolTip": "EventManagement\\EventManagement.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-04T13:09:55.539Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "EventManagement\\Form1.cs",
               "ToolTip": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\Form1.cs",
               "RelativeToolTip": "EventManagement\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA0wAgAAACGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-02T13:28:24.46Z",
               "EditorCaption": ""
