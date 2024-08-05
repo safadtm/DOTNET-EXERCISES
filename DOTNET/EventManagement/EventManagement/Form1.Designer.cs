@@ -179,6 +179,7 @@
             button3.TabIndex = 14;
             button3.Text = "Login";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 

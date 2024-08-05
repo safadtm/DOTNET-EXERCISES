@@ -2,10 +2,10 @@ using System.Data.SqlClient;
 
 namespace EventManagement
 {
-    
+
     public partial class Form1 : Form
     {
-        
+
         SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True");
         SqlCommand cmd;
         string gender;
@@ -56,6 +56,14 @@ namespace EventManagement
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("inserted successfully");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            loginform form2 = new loginform();
+            form2.Show();
+
         }
     }
 }
