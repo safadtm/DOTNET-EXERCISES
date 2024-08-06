@@ -42,5 +42,41 @@ namespace EventManagement
             Form1 r = new Form1();
             r.Show();
         }
+        /*
+         conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from registration where(email='"+textBox1.Text+"'and password='"+textBox2.Text+"')",conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            if (dt.Rows[0][0].ToString()=="1")
+            {
+
+
+                DataTable dtm = new DataTable();
+                sda = new SqlDataAdapter("select usertype from registration where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
+                sda.Fill(dtm);
+               
+                if (dtm.Rows[0][0].ToString()=="user")
+                {
+                    this.Hide();
+                    userform form4 = new userform();
+                    form4.Show();
+                }
+                else if(dtm.Rows[0][0].ToString() == "admin")
+                {
+                    this.Hide();
+                    adminform form5 = new adminform();
+                    form5.Show();
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password");
+            }
+
+            conn.Close();
+
+            */
     }
 }
