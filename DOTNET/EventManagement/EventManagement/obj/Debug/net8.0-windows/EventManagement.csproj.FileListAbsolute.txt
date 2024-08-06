@@ -24,3 +24,5 @@ C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\bin\Debug
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.csproj.AssemblyReference.cache
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventMan.E6E737A0.Up2Date
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.loginform.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.adminform.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.userform.resources
