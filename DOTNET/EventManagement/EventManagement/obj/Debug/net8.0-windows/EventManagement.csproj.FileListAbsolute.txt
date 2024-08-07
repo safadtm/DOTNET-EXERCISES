@@ -26,3 +26,8 @@ C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.loginform.resources
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.adminform.resources
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.userform.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.applicationform.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.applicationshow.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.resetpassword.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.adminformviewapplication.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.departmentform.resources

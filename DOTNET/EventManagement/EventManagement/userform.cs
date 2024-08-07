@@ -18,12 +18,16 @@ namespace EventManagement
 
         private void myApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            applicationform form8 = new applicationform();
+            form8.Show();
         }
 
         private void showApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            applicationshow form10 = new applicationshow();
+            form10.Show();
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)

@@ -122,6 +122,7 @@
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "reset password";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // linkLabel2
             // 

@@ -19,7 +19,14 @@ namespace EventManagement
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox1.Checked)
+            {
+                textBox2.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox2.PasswordChar = '*';
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -40,7 +47,7 @@ namespace EventManagement
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from usertable where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-         
+
             if (dt.Rows[0][0].ToString() == "1")
             {
 
@@ -71,19 +78,6 @@ namespace EventManagement
             conn.Close();
         }
 
-        /*
-       private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
-            {
-                textBox2.PasswordChar = '\0';
-            }
-            else
-            {
-                textBox2.PasswordChar = '*';
-            }
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
@@ -91,6 +85,5 @@ namespace EventManagement
             obj.Show();
         }
 
-        */
     }
 }
