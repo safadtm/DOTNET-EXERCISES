@@ -70,6 +70,23 @@ namespace EventManagement
 
             conn.Close();
         }
-      
+       private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox2.PasswordChar = '\0';
+            }
+            else
+            {
+                textBox2.PasswordChar = '*';
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            resetpassword obj = new resetpassword();
+            obj.Show();
+        }
     }
 }
