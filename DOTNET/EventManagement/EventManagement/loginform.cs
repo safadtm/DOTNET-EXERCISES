@@ -70,6 +70,8 @@ namespace EventManagement
 
             conn.Close();
         }
+
+        */
        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -88,5 +90,7 @@ namespace EventManagement
             resetpassword obj = new resetpassword();
             obj.Show();
         }
+
+        */
     }
 }
