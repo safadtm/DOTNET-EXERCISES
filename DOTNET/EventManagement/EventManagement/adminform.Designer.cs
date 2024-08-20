@@ -92,6 +92,7 @@
             MainMenuStrip = menuStrip1;
             Name = "adminform";
             Text = "adminform";
+            Load += adminform_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

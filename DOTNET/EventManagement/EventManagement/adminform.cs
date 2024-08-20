@@ -49,5 +49,10 @@ namespace EventManagement
             this.Hide();
             form11.Show();
         }
+
+        private void adminform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

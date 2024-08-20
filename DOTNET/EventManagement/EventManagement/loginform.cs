@@ -44,7 +44,7 @@ namespace EventManagement
         private void button2_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from usertable where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
+            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from register where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
@@ -53,7 +53,7 @@ namespace EventManagement
 
 
                 DataTable dtm = new DataTable();
-                sda = new SqlDataAdapter("select usertype from usertable where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
+                sda = new SqlDataAdapter("select usertype from register where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
                 sda.Fill(dtm);
 
                 if (dtm.Rows[0][0].ToString() == "user")
@@ -85,5 +85,9 @@ namespace EventManagement
             obj.Show();
         }
 
+        private void loginform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

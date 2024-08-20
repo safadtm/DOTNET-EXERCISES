@@ -51,7 +51,7 @@ namespace EventManagement
         private void button2_Click(object sender, EventArgs e)
         {
             conn.Open();// Open the database connection
-            cmd = new SqlCommand("insert into usertable values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + gender + "','" + textBox4.Text + "','" + textBox5.Text + "','user')", conn);
+            cmd = new SqlCommand("insert into register values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + gender + "','" + textBox4.Text + "','" + textBox5.Text + "','user')", conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("inserted successfully");

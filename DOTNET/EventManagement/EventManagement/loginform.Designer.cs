@@ -153,6 +153,7 @@
             Controls.Add(button1);
             Name = "loginform";
             Text = "loginform";
+            Load += loginform_Load;
             ResumeLayout(false);
             PerformLayout();
         }

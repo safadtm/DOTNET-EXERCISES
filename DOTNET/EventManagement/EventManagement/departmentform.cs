@@ -29,7 +29,7 @@ namespace EventManagement
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            cmd = new SqlCommand("insert into department values('" + textBox1.Text + "','" + textBox3.Text + "','" + comboBox1.Text + "')", conn);
+            cmd = new SqlCommand("insert into department values('" + textBox1.Text + "','" + textBox2.Text + "','" + comboBox1.Text + "')", conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("department inserted");
