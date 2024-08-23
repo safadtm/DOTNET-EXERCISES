@@ -24,7 +24,20 @@ namespace EventManagement
 
         private void applicationform_Load(object sender, EventArgs e)
         {
-
+            // TODO: This line of code loads data into the 'eventmanagementDataSet13.department' table. You can move, or remove it, as needed.
+          //  this.departmentTableAdapter3.Fill(this.eventmanagementDataSet13.department);
+            // TODO: This line of code loads data into the 'eventmanagementDataSet12.department' table. You can move, or remove it, as needed.
+          //  this.departmentTableAdapter2.Fill(this.eventmanagementDataSet12.department);
+            // TODO: This line of code loads data into the 'eventmanagementDataSet11.department' table. You can move, or remove it, as needed.
+          //  this.departmentTableAdapter1.Fill(this.eventmanagementDataSet11.department);
+            // TODO: This line of code loads data into the 'eventmanagementDataSet10.application' table. You can move, or remove it, as needed.
+          //  this.applicationTableAdapter2.Fill(this.eventmanagementDataSet10.application);
+            // TODO: This line of code loads data into the 'eventmanagementDataSet9.application' table. You can move, or remove it, as needed.
+          //  this.applicationTableAdapter1.Fill(this.eventmanagementDataSet9.application);
+            // TODO: This line of code loads data into the 'eventmanagementDataSet8.application' table. You can move, or remove it, as needed.
+          //  this.applicationTableAdapter.Fill(this.eventmanagementDataSet8.application);
+            // TODO: This line of code loads data into the 'eventmanagementDataSet6.department' table. You can move, or remove it, as needed.
+          //  this.departmentTableAdapter.Fill(this.eventmanagementDataSet6.department);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
