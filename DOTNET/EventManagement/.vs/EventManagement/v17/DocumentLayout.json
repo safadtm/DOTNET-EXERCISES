@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|c:\\users\\safad\\dotnet-exercises\\dotnet\\eventmanagement\\eventmanagement\\applicationshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\applicationshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|c:\\users\\safad\\dotnet-exercises\\dotnet\\eventmanagement\\eventmanagement\\adminformviewapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\adminformviewapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|c:\\users\\safad\\dotnet-exercises\\dotnet\\eventmanagement\\eventmanagement\\applicationshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\applicationshow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|c:\\users\\safad\\dotnet-exercises\\dotnet\\eventmanagement\\eventmanagement\\adminformviewapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{085B05D9-0088-413E-824F-9750D2F7AD6C}|EventManagement\\EventManagement.csproj|solutionrelative:eventmanagement\\adminformviewapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "applicationshow.cs",
-              "DocumentMoniker": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\applicationshow.cs",
-              "RelativeDocumentMoniker": "EventManagement\\applicationshow.cs",
-              "ToolTip": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\applicationshow.cs",
-              "RelativeToolTip": "EventManagement\\applicationshow.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAYwHcAAAAiAAAA",
+              "Title": "adminformviewapplication.cs",
+              "DocumentMoniker": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\adminformviewapplication.cs",
+              "RelativeDocumentMoniker": "EventManagement\\adminformviewapplication.cs",
+              "ToolTip": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\adminformviewapplication.cs",
+              "RelativeToolTip": "EventManagement\\adminformviewapplication.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAuwB0AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T02:43:09.459Z",
+              "WhenOpened": "2024-08-23T04:47:17.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "applicationshow.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\applicationshow.cs",
-              "RelativeDocumentMoniker": "EventManagement\\applicationshow.cs",
-              "ToolTip": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\applicationshow.cs [Design]",
-              "RelativeToolTip": "EventManagement\\applicationshow.cs [Design]",
+              "Title": "adminformviewapplication.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\adminformviewapplication.cs",
+              "RelativeDocumentMoniker": "EventManagement\\adminformviewapplication.cs",
+              "ToolTip": "C:\\Users\\safad\\DOTNET-EXERCISES\\DOTNET\\EventManagement\\EventManagement\\adminformviewapplication.cs [Design]",
+              "RelativeToolTip": "EventManagement\\adminformviewapplication.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T02:39:04.116Z",
+              "WhenOpened": "2024-08-23T04:44:28.551Z",
               "EditorCaption": " [Design]"
             }
           ]
