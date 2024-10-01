@@ -38,6 +38,7 @@
             checkBox1 = new CheckBox();
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
             SuspendLayout();
             // 
             // button1
@@ -135,12 +136,24 @@
             linkLabel2.Text = "create an account";
             linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
+            // linkLabel3
+            // 
+            linkLabel3.AutoSize = true;
+            linkLabel3.Location = new Point(382, 310);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(156, 28);
+            linkLabel3.TabIndex = 10;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "forgot password";
+            linkLabel3.LinkClicked += linkLabel3_LinkClicked;
+            // 
             // loginform
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(931, 571);
+            Controls.Add(linkLabel3);
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(checkBox1);
@@ -170,5 +183,6 @@
         private CheckBox checkBox1;
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
+        private LinkLabel linkLabel3;
     }
 }

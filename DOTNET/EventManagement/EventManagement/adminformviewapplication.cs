@@ -23,11 +23,7 @@ namespace EventManagement
         private void adminformviewapplication_Load(object sender, EventArgs e)
         {
 
-            // TODO: This line of code loads data into the 'eventmanagementDataSet21.approval' table. You can move, or remove it, as needed.
-            //this.approvalTableAdapter2.Fill(this.eventmanagementDataSet21.approval);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet20.application' table. You can move, or remove it, as needed.
-            // this.applicationTableAdapter2.Fill(this.eventmanagementDataSet20.application);
-            fillDropDown();
+             fillDropDown();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

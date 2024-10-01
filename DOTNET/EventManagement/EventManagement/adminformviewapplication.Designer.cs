@@ -79,6 +79,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "not approved", "approved" });
             comboBox2.Location = new Point(436, 317);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(218, 36);

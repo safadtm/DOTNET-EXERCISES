@@ -21,12 +21,38 @@ namespace EventManagement
         public applicationshow()
         {
             InitializeComponent();
+            LoadDepartments();
+            txtAppId.ReadOnly = true;
+            txtStatus.ReadOnly = true;
+
+        }
+
+        private void LoadDepartments()
+        {
+            using (SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True"))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT deptname FROM department", conn); 
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    cmbDept.Items.Clear();
+
+                    while (reader.Read())
+                    {
+                        cmbDept.Items.Add(reader["deptname"].ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void applicationshow_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'eventmanagementDataSet19.application' table. You can move, or remove it, as needed.
-            // this.applicationTableAdapter1.Fill(this.eventmanagementDataSet19.application);
             disp_data();
         }
 
@@ -43,22 +69,22 @@ namespace EventManagement
         }
         public void disp_data()
         {
-            conn.Open();
-            // Make the DataGridView visible
-            dataGridView1.Visible = true;
-
-            // Create an adapter to retrieve data from the database
-            SqlDataAdapter adpt3 = new SqlDataAdapter("select * from application", conn);
-
-            // Create a DataTable to hold the retrieved data
-            DataTable dt3 = new DataTable();
-
-            // Fill the DataTable with data from the database
-            adpt3.Fill(dt3);
-
-            // Bind the DataTable as the DataSource for the DataGridView
-            dataGridView1.DataSource = dt3;
-            conn.Close();
+            using (SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True"))
+            {
+                try
+                {
+                    conn.Open();
+                    dataGridView1.Visible = true;
+                    SqlDataAdapter adpt3 = new SqlDataAdapter("SELECT * FROM application", conn);
+                    DataTable dt3 = new DataTable();
+                    adpt3.Fill(dt3);
+                    dataGridView1.DataSource = dt3;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,7 +94,7 @@ namespace EventManagement
             {
                 conn.Open();
                 cmd = new SqlCommand("delete from application where aplnid=@AI", conn);
-                cmd.Parameters.AddWithValue("@AI", textBox1.Text);
+                cmd.Parameters.AddWithValue("@AI", txtAppId.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Details Deleted");
                 conn.Close();
@@ -83,7 +109,7 @@ namespace EventManagement
         private void button2_Click(object sender, EventArgs e)
         {
             // update button 
-            if (textBox1.Text == "" || textBox2.Text == "" || comboBox1.Text == "" || comboBox2.Text == "" || dateTimePicker1.Text == "")
+            if (txtAplnName.Text == "" || txtStatus.Text == "" || cmbDept.Text == "" || cmbEvents.Text == "" || dateTimePicker1.Text == "")
             {
                 MessageBox.Show("Missing Informations!!!");
             }
@@ -92,12 +118,12 @@ namespace EventManagement
                 try
                 {
                     conn.Open();
-                    cmd = new SqlCommand("update application set aplname=@AN,deptname=@DN,events=@E,date=@D,status=@S", conn);
-                    cmd.Parameters.AddWithValue("@AN", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@DN", comboBox1.Text);
-                    cmd.Parameters.AddWithValue("@E", comboBox2.SelectedItem.ToString());
+                    cmd = new SqlCommand("update application set aplname=@AN,deptname=@DN,events=@E,date=@D where aplnid=@ID", conn);
+                    cmd.Parameters.AddWithValue("@AN", txtAplnName.Text);
+                    cmd.Parameters.AddWithValue("@DN", cmbDept.Text);
+                    cmd.Parameters.AddWithValue("@E", cmbEvents.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@D", dateTimePicker1.Text);
-                    cmd.Parameters.AddWithValue("@S", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@ID", txtAppId.Text);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Details Inserted");
                     disp_data();
@@ -117,13 +143,40 @@ namespace EventManagement
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-          //  textBox4.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            comboBox1.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            comboBox2.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            textBox2.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            
+            if (e.RowIndex >= 0) 
+            {
+               
+                txtAppId.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txtAplnName.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 
+               
+                LoadDepartments();
+
+                
+                string selectedDept = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+                if (cmbDept.Items.Contains(selectedDept))
+                {
+                    cmbDept.SelectedItem = selectedDept;
+                }
+
+                string eventsString = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                cmbEvents.Items.Clear();
+                string[] eventsArray = eventsString.Split(',');
+                foreach (string eventItem in eventsArray)
+                {
+                    cmbEvents.Items.Add(eventItem.Trim());
+                }
+                if (cmbEvents.Items.Count > 0)
+                {
+                    cmbEvents.SelectedIndex = 0;
+                }
+
+             
+                dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txtStatus.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            }
         }
 
     }

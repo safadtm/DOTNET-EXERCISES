@@ -123,6 +123,7 @@
             Controls.Add(label1);
             Name = "resetpassword";
             Text = "resetpassword";
+            Load += resetpassword_Load;
             ResumeLayout(false);
             PerformLayout();
         }

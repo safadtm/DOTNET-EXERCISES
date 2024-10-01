@@ -41,9 +41,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(181, 117);
             label1.Name = "label1";
-            label1.Size = new Size(99, 28);
+            label1.Size = new Size(59, 28);
             label1.TabIndex = 0;
-            label1.Text = "Username";
+            label1.Text = "email";
             // 
             // label2
             // 
@@ -103,6 +103,7 @@
             Controls.Add(label1);
             Name = "forgotform";
             Text = "forgotform";
+            Load += forgotform_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -22,7 +22,7 @@ namespace EventManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text==textBox3.Text)
+            if (textBox2.Text == textBox3.Text)
             {
                 try
                 {
@@ -30,7 +30,7 @@ namespace EventManagement
                     string query = "UPDATE register SET password = @Password WHERE email = @Email";
                     cmd = new SqlCommand(query, conn);
 
-                    // Use parameters to prevent SQL injection
+                    
                     cmd.Parameters.AddWithValue("@Password", textBox2.Text);
                     cmd.Parameters.AddWithValue("@Email", textBox1.Text);
 
@@ -64,6 +64,11 @@ namespace EventManagement
             this.Hide();
             loginform obj = new loginform();
             obj.Show();
+        }
+
+        private void resetpassword_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,6 +18,7 @@ namespace EventManagement
         public forgotform()
         {
             InitializeComponent();
+            textBox2.ReadOnly = true;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -30,7 +31,7 @@ namespace EventManagement
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            cmd = new SqlCommand("select name,password from register where name='"+textBox1.Text+"'",conn);
+            cmd = new SqlCommand("select email,password from register where email='" + textBox1.Text + "'", conn);
             SqlDataReader dr = cmd.ExecuteReader();
 
             if (dr.Read())
@@ -42,6 +43,13 @@ namespace EventManagement
                 MessageBox.Show("username not available");
                 textBox2.Text = "";
             }
+
+            conn.Close();
+        }
+
+        private void forgotform_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

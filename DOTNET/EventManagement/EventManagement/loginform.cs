@@ -44,18 +44,15 @@ namespace EventManagement
         private void button2_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from register where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
             DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter("select count(*) from register where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
             sda.Fill(dt);
 
             if (dt.Rows[0][0].ToString() == "1")
             {
-
-
                 DataTable dtm = new DataTable();
                 sda = new SqlDataAdapter("select usertype from register where(email='" + textBox1.Text + "'and password='" + textBox2.Text + "')", conn);
                 sda.Fill(dtm);
-
                 if (dtm.Rows[0][0].ToString() == "user")
                 {
                     this.Hide();
@@ -88,6 +85,13 @@ namespace EventManagement
         private void loginform_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            forgotform obj1 = new forgotform();
+            obj1.Show();
         }
     }
 }

@@ -31,17 +31,18 @@
             dataGridView1 = new DataGridView();
             label1 = new Label();
             label2 = new Label();
-            comboBox1 = new ComboBox();
+            cmbDept = new ComboBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            txtAplnName = new TextBox();
             label4 = new Label();
-            comboBox2 = new ComboBox();
-            textBox2 = new TextBox();
+            cmbEvents = new ComboBox();
+            txtStatus = new TextBox();
             label5 = new Label();
             dateTimePicker1 = new DateTimePicker();
             button1 = new Button();
             button2 = new Button();
             linkLabel1 = new LinkLabel();
+            txtAppId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -75,13 +76,13 @@
             label2.TabIndex = 2;
             label2.Text = "Application Name";
             // 
-            // comboBox1
+            // cmbDept
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(378, 326);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(208, 36);
-            comboBox1.TabIndex = 3;
+            cmbDept.FormattingEnabled = true;
+            cmbDept.Location = new Point(378, 326);
+            cmbDept.Name = "cmbDept";
+            cmbDept.Size = new Size(208, 36);
+            cmbDept.TabIndex = 3;
             // 
             // label3
             // 
@@ -92,12 +93,12 @@
             label3.TabIndex = 4;
             label3.Text = "Department Name";
             // 
-            // textBox1
+            // txtAplnName
             // 
-            textBox1.Location = new Point(378, 277);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(208, 34);
-            textBox1.TabIndex = 5;
+            txtAplnName.Location = new Point(378, 277);
+            txtAplnName.Name = "txtAplnName";
+            txtAplnName.Size = new Size(208, 34);
+            txtAplnName.TabIndex = 5;
             // 
             // label4
             // 
@@ -108,20 +109,20 @@
             label4.TabIndex = 6;
             label4.Text = "Events";
             // 
-            // comboBox2
+            // cmbEvents
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(378, 389);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(208, 36);
-            comboBox2.TabIndex = 7;
+            cmbEvents.FormattingEnabled = true;
+            cmbEvents.Location = new Point(378, 389);
+            cmbEvents.Name = "cmbEvents";
+            cmbEvents.Size = new Size(208, 36);
+            cmbEvents.TabIndex = 7;
             // 
-            // textBox2
+            // txtStatus
             // 
-            textBox2.Location = new Point(378, 447);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(208, 34);
-            textBox2.TabIndex = 8;
+            txtStatus.Location = new Point(378, 447);
+            txtStatus.Name = "txtStatus";
+            txtStatus.Size = new Size(208, 34);
+            txtStatus.TabIndex = 8;
             // 
             // label5
             // 
@@ -170,23 +171,31 @@
             linkLabel1.Text = "back";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // txtAppId
+            // 
+            txtAppId.Location = new Point(378, 231);
+            txtAppId.Name = "txtAppId";
+            txtAppId.Size = new Size(208, 34);
+            txtAppId.TabIndex = 14;
+            // 
             // applicationshow
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(985, 703);
+            Controls.Add(txtAppId);
             Controls.Add(linkLabel1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label5);
-            Controls.Add(textBox2);
-            Controls.Add(comboBox2);
+            Controls.Add(txtStatus);
+            Controls.Add(cmbEvents);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(txtAplnName);
             Controls.Add(label3);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbDept);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
@@ -203,16 +212,17 @@
         private DataGridView dataGridView1;
         private Label label1;
         private Label label2;
-        private ComboBox comboBox1;
+        private ComboBox cmbDept;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox txtAplnName;
         private Label label4;
-        private ComboBox comboBox2;
-        private TextBox textBox2;
+        private ComboBox cmbEvents;
+        private TextBox txtStatus;
         private Label label5;
         private DateTimePicker dateTimePicker1;
         private Button button1;
         private Button button2;
         private LinkLabel linkLabel1;
+        private TextBox txtAppId;
     }
 }

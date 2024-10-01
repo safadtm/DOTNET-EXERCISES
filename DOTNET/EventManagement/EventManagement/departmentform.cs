@@ -23,16 +23,12 @@ namespace EventManagement
 
         private void departmentform_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'eventmanagementDataSet14.approval' table. You can move, or remove it, as needed.
-            //this.approvalTableAdapter.Fill(this.eventmanagementDataSet14.approval);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet7.department' table. You can move, or remove it, as needed.
-          //  this.departmentTableAdapter.Fill(this.eventmanagementDataSet7.department);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             conn.Open();
-            cmd = new SqlCommand("insert into department values('" + textBox1.Text + "','" + textBox2.Text + "','" + comboBox1.Text + "')", conn);
+            cmd = new SqlCommand("insert into department values('" + txtxDeptName.Text + "')", conn);
             cmd.ExecuteNonQuery();
             conn.Close();
             MessageBox.Show("department inserted");

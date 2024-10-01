@@ -13,55 +13,106 @@ namespace EventManagement
 {
     public partial class applicationform : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True");
         SqlCommand cmd;
-        string str = "null";
+        List<string> selectedEvents = new List<string>();
+        
 
         public applicationform()
         {
             InitializeComponent();
+            LoadDepartments();
+        }
+
+        private void LoadDepartments()
+        {
+            using (SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True"))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand("SELECT deptname FROM department", conn); 
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+                     cmbDept.Items.Clear();
+
+                    while (reader.Read())
+                    {
+                        cmbDept.Items.Add(reader["deptname"].ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void applicationform_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'eventmanagementDataSet13.department' table. You can move, or remove it, as needed.
-          //  this.departmentTableAdapter3.Fill(this.eventmanagementDataSet13.department);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet12.department' table. You can move, or remove it, as needed.
-          //  this.departmentTableAdapter2.Fill(this.eventmanagementDataSet12.department);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet11.department' table. You can move, or remove it, as needed.
-          //  this.departmentTableAdapter1.Fill(this.eventmanagementDataSet11.department);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet10.application' table. You can move, or remove it, as needed.
-          //  this.applicationTableAdapter2.Fill(this.eventmanagementDataSet10.application);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet9.application' table. You can move, or remove it, as needed.
-          //  this.applicationTableAdapter1.Fill(this.eventmanagementDataSet9.application);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet8.application' table. You can move, or remove it, as needed.
-          //  this.applicationTableAdapter.Fill(this.eventmanagementDataSet8.application);
-            // TODO: This line of code loads data into the 'eventmanagementDataSet6.department' table. You can move, or remove it, as needed.
-          //  this.departmentTableAdapter.Fill(this.eventmanagementDataSet6.department);
+         
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            str = checkBox1.Text;
+            if (checkBox1.Checked)
+            {
+                selectedEvents.Add(checkBox1.Text);
+            }
+            else
+            {
+                selectedEvents.Remove(checkBox1.Text);
+            }
         }
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            str = checkBox2.Text;
+            if (checkBox2.Checked)
+            {
+                selectedEvents.Add(checkBox2.Text);
+            }
+            else
+            {
+                selectedEvents.Remove(checkBox2.Text);
+            }
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            str = checkBox3.Text;
+            if (checkBox3.Checked)
+            {
+                selectedEvents.Add(checkBox3.Text);
+            }
+            else
+            {
+                selectedEvents.Remove(checkBox3.Text);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            cmd = new SqlCommand("insert into application values('" + textBox1.Text + "','" + textBox2.Text + "','" + comboBox1.Text + "','" + str + "','" + dateTimePicker1.Text + "','" + comboBox2.Text + "')", conn);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("INSERTED");
-            conn.Close();
+            string selectedCheckboxes = string.Join(", ", selectedEvents);
+
+            using (SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-RPVNF73V;Initial Catalog=EventManagement;Integrated Security=True"))
+            {
+                try
+                {
+                    conn.Open();
+                    cmd = new SqlCommand("INSERT INTO application (aplname, deptname, events, date, status) VALUES (@Name, @Dept, @Events, @Date, @Status)", conn);
+
+                    cmd.Parameters.AddWithValue("@Name", txtName.Text);
+                    cmd.Parameters.AddWithValue("@Dept", cmbDept.Text);
+                    cmd.Parameters.AddWithValue("@Events", selectedCheckboxes);
+                    cmd.Parameters.AddWithValue("@Date", dateTimePicker1.Value); 
+                    cmd.Parameters.AddWithValue("@Status", "not approved");
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("INSERTED");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+             }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

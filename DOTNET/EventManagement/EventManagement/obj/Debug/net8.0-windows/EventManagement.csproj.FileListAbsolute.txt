@@ -31,3 +31,4 @@ C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.resetpassword.resources
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.adminformviewapplication.resources
 C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.departmentform.resources
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement\EventManagement\obj\Debug\net8.0-windows\EventManagement.forgotform.resources
