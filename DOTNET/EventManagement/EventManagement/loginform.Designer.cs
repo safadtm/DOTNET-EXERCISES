@@ -164,6 +164,8 @@
             Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "loginform";
             Text = "loginform";
             Load += loginform_Load;

@@ -81,6 +81,8 @@
             Controls.Add(button1);
             Controls.Add(linkLabel1);
             Controls.Add(label2);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MinimizeBox = false;
             Name = "departmentform";
             Text = "departmentform";
             Load += departmentform_Load;

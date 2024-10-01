@@ -199,6 +199,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MinimizeBox = false;
             Name = "applicationshow";
             Text = "applicationshow";
             Load += applicationshow_Load;

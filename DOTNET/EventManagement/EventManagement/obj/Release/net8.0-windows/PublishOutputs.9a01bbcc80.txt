@@ -1,0 +1,11 @@
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement.exe
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement.deps.json
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement.runtimeconfig.json
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\EventManagement.pdb
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\System.Data.SqlClient.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\runtimes\win-arm64\native\sni.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\runtimes\win-x64\native\sni.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\runtimes\win-x86\native\sni.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\safad\DOTNET-EXERCISES\DOTNET\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

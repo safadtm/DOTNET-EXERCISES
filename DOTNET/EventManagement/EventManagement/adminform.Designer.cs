@@ -89,7 +89,9 @@
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
             Name = "adminform";
             Text = "adminform";
             Load += adminform_Load;

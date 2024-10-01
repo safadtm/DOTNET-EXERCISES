@@ -101,6 +101,8 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "forgotform";
             Text = "forgotform";
             Load += forgotform_Load;
