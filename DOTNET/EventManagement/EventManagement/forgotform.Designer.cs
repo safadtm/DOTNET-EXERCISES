@@ -56,12 +56,13 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(231, 76, 60);
             button1.Location = new Point(365, 183);
             button1.Name = "button1";
             button1.Size = new Size(145, 44);
             button1.TabIndex = 2;
             button1.Text = "Get password";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // textBox1
@@ -93,7 +94,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.FromArgb(189, 195, 199);
             ClientSize = new Size(902, 551);
             Controls.Add(linkLabel1);
             Controls.Add(textBox2);

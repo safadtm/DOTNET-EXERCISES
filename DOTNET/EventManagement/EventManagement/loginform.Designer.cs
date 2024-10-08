@@ -43,22 +43,24 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(231, 76, 60);
             button1.Location = new Point(291, 366);
             button1.Name = "button1";
             button1.Size = new Size(114, 36);
             button1.TabIndex = 0;
             button1.Text = "clear";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.FromArgb(26, 188, 156);
             button2.Location = new Point(492, 366);
             button2.Name = "button2";
             button2.Size = new Size(114, 36);
             button2.TabIndex = 1;
             button2.Text = "login";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // label1
@@ -151,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.FromArgb(189, 195, 199);
             ClientSize = new Size(931, 571);
             Controls.Add(linkLabel3);
             Controls.Add(linkLabel2);

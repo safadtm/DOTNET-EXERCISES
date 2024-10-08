@@ -142,22 +142,24 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(231, 76, 60);
             button1.Location = new Point(334, 614);
             button1.Name = "button1";
             button1.Size = new Size(103, 57);
             button1.TabIndex = 11;
             button1.Text = "Delete";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.FromArgb(241, 196, 15);
             button2.Location = new Point(483, 614);
             button2.Name = "button2";
             button2.Size = new Size(103, 57);
             button2.TabIndex = 12;
             button2.Text = "Update";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // linkLabel1
@@ -182,7 +184,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.FromArgb(189, 195, 199);
             ClientSize = new Size(985, 703);
             Controls.Add(txtAppId);
             Controls.Add(linkLabel1);

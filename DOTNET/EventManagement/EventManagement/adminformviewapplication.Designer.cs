@@ -88,12 +88,13 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(231, 76, 60);
             button1.Location = new Point(397, 418);
             button1.Name = "button1";
             button1.Size = new Size(108, 42);
             button1.TabIndex = 5;
             button1.Text = "Submit";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // linkLabel1
@@ -111,7 +112,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.FromArgb(189, 195, 199);
             ClientSize = new Size(919, 538);
             Controls.Add(linkLabel1);
             Controls.Add(button1);

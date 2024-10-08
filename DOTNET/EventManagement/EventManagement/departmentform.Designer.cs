@@ -56,12 +56,13 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(231, 76, 60);
             button1.Location = new Point(424, 292);
             button1.Name = "button1";
             button1.Size = new Size(106, 39);
             button1.TabIndex = 4;
             button1.Text = "INSERT";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // txtxDeptName
@@ -75,7 +76,7 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.FromArgb(189, 195, 199);
             ClientSize = new Size(922, 525);
             Controls.Add(txtxDeptName);
             Controls.Add(button1);

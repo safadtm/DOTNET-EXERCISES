@@ -153,39 +153,42 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(231, 76, 60);
             button1.Location = new Point(83, 492);
             button1.Name = "button1";
             button1.Size = new Size(127, 64);
             button1.TabIndex = 12;
             button1.Text = "Clear";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.FromArgb(46, 204, 113);
             button2.Location = new Point(276, 492);
             button2.Name = "button2";
             button2.Size = new Size(125, 64);
             button2.TabIndex = 13;
             button2.Text = "Register";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.FromArgb(26, 188, 156);
             button3.Location = new Point(457, 492);
             button3.Name = "button3";
             button3.Size = new Size(125, 64);
             button3.TabIndex = 14;
             button3.Text = "Login";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.FromArgb(189, 195, 199);
             ClientSize = new Size(929, 585);
             Controls.Add(button3);
             Controls.Add(button2);
